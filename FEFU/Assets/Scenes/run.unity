@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 159248867}
   - component: {fileID: 159248866}
   - component: {fileID: 159248868}
+  - component: {fileID: 159248869}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -182,7 +183,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ddf55d694d3321445bea206ad3957dd6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -267,6 +268,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd19b41cc163d24b84905916364c5d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  connectionIP: 127.0.0.1
+  connectionPort: 25001
+--- !u!95 &159248869
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159248863}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: afa0fd2ea5e70db43a56153b24528e79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +366,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0.1, y: 0.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -404,6 +426,18 @@ PrefabInstance:
     - target: {fileID: 294460098596649473, guid: cdf44b624b1377c4eac20c119b7d2576, type: 3}
       propertyPath: m_Name
       value: scenery
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535611997326846320, guid: cdf44b624b1377c4eac20c119b7d2576, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535611997326846322, guid: cdf44b624b1377c4eac20c119b7d2576, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535611997998190586, guid: cdf44b624b1377c4eac20c119b7d2576, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6598934209254351483, guid: cdf44b624b1377c4eac20c119b7d2576, type: 3}
       propertyPath: m_RootOrder
